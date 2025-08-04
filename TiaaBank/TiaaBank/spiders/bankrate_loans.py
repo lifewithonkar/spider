@@ -8,7 +8,7 @@ class BankrateRatesSpider(scrapy.Spider):  #SPIDER CLASS DEFINITION
     name = "bankrate_rates"
     allowed_domains = ["bankrate.com"]
     start_urls = ["https://www.bankrate.com/mortgages/mortgage-rates/"]
-    def __init__(self):       #INITIALIZATION (__init__ METHOD)
+    def __init__(self):       #INITIALIZATION (__    init__ METHOD)
         super().__init__()
         # One permanent CSV + snapshot JSON
         self.csv_path = "bankrate_rates_history.csv"        # Master All-in-One CSV
